@@ -58,8 +58,8 @@ if __name__ == '__main__':
     # Creating a regression line for the data
     regression_line = [(m*x)+b for x in xs]
 
-    # Predicting y with a value of x with the regression
-    predict_x = 7
+    # Predicting y for a value of x with the regression
+    predict_x = random.randrange(0, len(xs))
     predict_y = (m*predict_x)+b
     print(f'For value of x={predict_x}, y={round(predict_y, 3)}')
 
